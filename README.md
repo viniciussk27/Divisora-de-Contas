@@ -18,3 +18,7 @@ Como usar:
 Insira os valores dos salários e das contas nos campos indicados.
 Clique no botão "Calcular".
 O resultado será exibido na tela.
+
+Link: https://viniciussk27.github.io/Divisora-de-Contas
+
+V.1.0
