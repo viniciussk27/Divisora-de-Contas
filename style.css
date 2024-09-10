@@ -22,7 +22,7 @@ a {color: #ffffff;
 }
 
 #hd {text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(230, 211, 175);
     background-color: rgb(0, 0, 0);}
 
 #art{ display:none;
@@ -31,7 +31,7 @@ a {color: #ffffff;
     background-color: rgb(15, 15, 15);
 }
 #text{position: relative;
-    color: gainsboro;
+    color: rgb(236, 236, 236);
     text-align: center;
 }
 
@@ -49,7 +49,7 @@ a {color: #ffffff;
 }
 #foot{width: 100%;
     justify-content: space-between;
-  color: #ffffff;
+  color: #ffd29c;
     align-items: center;
     display: flex;
     background-color: rgb(34, 34, 34);
@@ -74,8 +74,9 @@ h2{color: aliceblue;}
     position: fixed;
     background-color: #212121;
     bottom: 10%;
+    color: rgb(235, 203, 161);
 }
-#comment-text{background-color: #eeeeee;
+#comment-text{background-color: #fff4db;
     width: 80%;
     margin-left: 2px;
     resize: none;}
