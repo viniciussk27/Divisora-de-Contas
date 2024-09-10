@@ -19,3 +19,29 @@ function calcular() {
     const resultado = document.getElementById('resultado');
     resultado.textContent = `A Pessoa 1 deve pagar R$ ${valorAPagar1.toFixed(2)} e a Pessoa 2 deve pagar R$ ${valorAPagar2.toFixed(2)}`;
 }
+
+
+function addComment() {
+    const textArea = document.getElementById('comment-text');
+    const commentText = textArea.value.trim();
+    if (commentText) {
+        const commentContainer = document.createElement('div');
+        commentContainer.className = 'comment';
+
+        const commentAuthor = document.createElement('p');
+        commentAuthor.className = 'comment-author';
+        commentAuthor.textContent = 'Usuário:';
+
+        const commentContent = document.createElement('p');
+        commentContent.className = 'comment-text';
+        commentContent.textContent = commentText;
+
+        commentContainer.appendChild(commentAuthor);
+        commentContainer.appendChild(commentContent);
+
+        const commentsContainer = document.getElementById('comments-container');
+        commentsContainer.appendChild(commentContainer);
+
+        textArea.value = ''; // Limpa o campo de texto
+    }
+}

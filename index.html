@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta name="author" content="vinicius pascoal">
-    <meta charset="viewport" content="width=device-width,initial-scale'1.0'">
+    <meta charset="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <title>Divisão de Contas da casa</title>
@@ -10,63 +10,31 @@
 <header id="hd"><h1><img src="img/favicon.png" alt="icone" width="24px" height="24px">Divisora de Contas</h1></header>
 <body id="body">
     <section id="place"><h2>Digite para Calcular</h2><label for="salario1">Salário da Pessoa 1:</label>
-    <input type="number" id="salario1"><br>
+    <input type="number" id="salario1" placeholder="Digite o salário líquido."><br>
     <label for="salario2">Salário da Pessoa 2:</label>
-    <input type="number" id="salario2"><br>
-    <label for="totalContas">Total de Contas:</label>
-    <input type="number" id="totalContas"><br>
+    <input type="number" id="salario2" placeholder="Digite o salário líquido."><br>
+    <label for="totalContas" >Total de Contas:</label>
+    <input type="number" id="totalContas" placeholder="Valor a pagar no mês."><br>
     <button onclick="calcular()">Calcular</button>
     <p id="resultado"></p>
     <script src="script.js"></script>
 </section><br>
-<div id="art"><article id="text">Vamos simplificar ainda mais com um exemplo prático!
-
-   Imagine que você e um amigo dividem um apartamento.
-    
-    Vocês ganham salários diferentes:Você ganha R$ 1.500 e seu amigo ganha R$ 2.500.
-    As contas do apartamento somam R$ 1.900.
-    
-    Como dividir as contas de forma justa?
-    
-    1. Juntar os salários:
-    Renda total:R$ 1.500 (você) + R$ 2.500 (seu amigo) = R$ 4.000
-    
-    2. Ver quem ganha mais e quem ganha menos:
-     Seu amigo ganha mais, então ele deve pagar um pouco mais das contas.
-    
-    3. Dividir as contas de acordo com o que cada um ganha:
-    Sua parte:Você ganha 1.500 dos 4.000 reais. Isso é como se você tivesse 37,5% da renda total (1.500 dividido por 4.000).
-    Parte do seu amigo: Ele ganha 2.500 dos 4.000 reais. Isso é como se ele tivesse 62,5% da renda total (2.500 dividido por 4.000).
-    
-    4. Calcular o que cada um paga:
-    Suas contas:37,5% de R$ 1.900 = R$ 712,50
-    Contas do seu amigo:62,5% de R$ 1.900 = R$ 1.187,50
-    
-    Por que isso é justo?
-    Quem ganha mais, paga mais: É como dividir um bolo. Quem tem a fatia maior, come mais.
-    Cada um contribui de acordo com sua capacidade: Você e seu amigo estão dividindo as contas de forma proporcional ao que cada um ganha.
-    
-    Em resumo:
-    Juntam-se todos os salários.
-    Calcula-se a porcentagem que cada um representa nesse total.
-    Multiplica-se essa porcentagem pelo valor total das contas.
-    O resultado é o valor que cada um deve pagar.
-    
-    Dessa forma, vocês dividem as contas de forma justa e equilibrada!
-    
-    
-    </article>
-    <div id="ft"><img  src="img/casal.png" alt="casal financeiramente felíz"></div>
-</div>
-
+<section id="comment">
+    <h2>Comentários</h2>
+    <div id="comments-container"><!--area de output de comentarios--></div>
+    <div class="coment-form">
+        <textarea id="comment-text" placeholder="Faça algum comentário..."></textarea>
+        <br><button id="Enviar" onclick="addComment()">Enviar</button>
+    </div>
+</section>
 </body>
 <footer id="foot">
- <div >
+<div >
     <ul id="ftd">
         <li>
             <a href="https://github.com/viniciussk27"> <img src="img/git.png" alt="Icon" style="width: 16px; height: 16px;">Github</a>
         </li>
-     <li><a href="https://www.instagram.com/vinicius_pascoal34/"><img src="img/insta (1).png" alt="Icon" style="width: 16px; height: 16px;">Instagram</a>
+        <li><a href="https://www.instagram.com/vinicius_pascoal34/"><img src="img/insta (1).png" alt="Icon" style="width: 16px; height: 16px;">Instagram</a>
     </li>
 </ul>
 </div>
