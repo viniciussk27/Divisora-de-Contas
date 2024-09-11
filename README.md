@@ -21,4 +21,4 @@ O resultado será exibido na tela.
 
 Link: https://viniciussk27.github.io/Divisora-de-Contas
 
-V.1.0
+V.1.0.1

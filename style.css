@@ -4,27 +4,47 @@ a {color: #ffffff;
     font-family: sans-serif;}
 
 #body {
-    background-color: rgb(20, 20, 20);
-    display: block;
+ background-color: rgb(20, 20, 20);
     justify-content: center;
     align-items: center;
     height: 100vh; /* Garante que a altura do body seja 100% da altura da viewport */
-    margin: 0px; /* Remove margens padrão */
+    margin: 0; /* Remove margens padrão */
     padding: 0px;
 }
+@media(min-width:600px){
+    body{display: flex;
+}
+
+}
+@media(max-width:600px){
+    body{display:flex; }
+    #comment{display: block;
+}
+#hd{position: fixed;
+top: 0px;
+width: 100%;
+height: 10%;}
+}
+
 
 #place {color: antiquewhite;
     text-align: center; /* Centraliza o texto e os inputs dentro da seção */
     background-color: #2f2f2f; /* Adiciona uma cor de fundo para melhor visualização */
-    padding: 20px; /* Espaçamento interno */
-    border-radius: 30%; /* Bordas arredondadas */
+    padding-block: 20px; /* Espaçamento interno */
+    border-radius: 10%; /* Bordas arredondadas */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
     border: 2px solid rgb(24, 23, 23);
+    width: 80%;
+    height: fit-content;
 }
 
 #hd {text-align: center;
     color: rgb(230, 211, 175);
-    background-color: rgb(0, 0, 0);}
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 10%;}
 
 #art{ display:none;
     border: 4px solid  rgb(24, 23, 23);
@@ -71,20 +91,28 @@ align-items: center;
 
 h2{color: aliceblue;}
 
-#comment{width: 100%;
+#comment{display: flex;
+    width: 100%;
     position: fixed;
     background-color: #212121;
     bottom: 10%;
     color: rgb(235, 203, 161);
+    justify-content:space-around;
+    max-height:30%;
 }
 #comment-text{background-color: #fff4db;
     width: 80%;
     margin-left: 2px;
-    resize: none;}
+    resize:inherit;
+    max-width: fit-content;
+}
+
 
 #Enviar{margin-left: 2px;}
 
 #comments-container {
     color: rgb(233, 241, 183);
+/*adicionar o sistema de rolagem aqui e no resto da pagina se necessarío*/
 }
+
 
