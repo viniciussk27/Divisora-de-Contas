@@ -9,7 +9,8 @@ a {color: #ffffff;
     justify-content: center;
     align-items: center;
     height: 100vh; /* Garante que a altura do body seja 100% da altura da viewport */
-    margin: 0; /* Remove margens padrão */
+    margin: 0px; /* Remove margens padrão */
+    padding: 0px;
 }
 
 #place {color: antiquewhite;
